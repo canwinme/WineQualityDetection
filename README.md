@@ -29,7 +29,7 @@
 ## 분석 과정
 
 1. **데이터 탐색(EDA):** 데이터 크기, 자료형, 결측치, 기초 통계량 확인 및 품질 점수/알코올 함량 분포 시각화
-2. **데이터 전처리:** 품질 점수를 이진 분류 라벨로 변환하고 입력 특성(X)과 정답(y)을 분리
+2. **데이터 전처리:** 품질 점수를 이진 분류 라벨로 변환하고 입력 특성(X)과 정답(y)을 분리 (품질 등급 7 이상 우수 품질)
 3. **데이터 분리 및 표준화:** 80:20 비율로 층화 분할하고, Logistic Regression 입력에 StandardScaler 적용
 4. **모델 학습:** LogisticRegression과 DecisionTreeClassifier(`max_depth=5`) 학습
 5. **성능 평가:** Accuracy, Precision, Recall, F1-score 및 혼동 행렬 분석
