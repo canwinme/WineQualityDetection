@@ -19,11 +19,15 @@
 
 ## 데이터셋
 
+- **출처:** [UCI Machine Learning Repository — Wine Quality](https://archive.ics.uci.edu/dataset/186/wine+quality)
+- **사용한 파일:** `data/winequality-red.csv` (레드 와인 1,599개, 화학 성분 11개와 품질 점수 1개)
+- **논문:** Cortez et al. (2009), *Modeling wine preferences by data mining from physicochemical properties*
+
 [UCI Wine Quality Dataset](https://archive.ics.uci.edu/dataset/186/wine+quality)
 
 원본 데이터는 `winequality-red.csv`를 사용합니다. 이 파일은 세미콜론(`;`)으로 구분되어 있으며, 마지막 `quality` 컬럼에 품질 점수가 기록되어 있습니다.
 
-> 데이터셋은 저장소에 포함하지 않았습니다. 직접 내려받은 CSV를 Google Colab의 `sample_data/winequality-red.csv` 위치에 배치하면 원본 노트북과 동일한 경로로 실행할 수 있습니다.
+> 원본 레드 와인 데이터 파일은 이 저장소의 [`data/winequality-red.csv`](data/winequality-red.csv)에 포함되어 있습니다. 출처: [UCI Machine Learning Repository – Wine Quality](https://archive.ics.uci.edu/dataset/186/wine+quality).
 
 ## 분석 과정
 
@@ -59,14 +63,16 @@ DecisionTreeClassifier는 LogisticRegression보다 정확도, 정밀도, 재현�
 ## 실행 방법
 
 1. 이 저장소의 `WineQualityDetection.ipynb`를 Jupyter Notebook 또는 Google Colab에서 엽니다.
-2. [UCI 원본 CSV](https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv)를 내려받습니다.
-3. CSV를 노트북 코드에서 지정한 `sample_data/winequality-red.csv` 위치에 배치합니다. (다른 위치라면 `pd.read_csv()` 경로를 수정합니다.)
+2. 저장소에 포함된 `data/winequality-red.csv`를 사용합니다.
+3. 노트북과 같은 폴더에 `data/` 폴더를 유지합니다. Google Colab에서는 해당 폴더를 업로드하거나 읽기 경로를 환경에 맞게 수정합니다.
 4. 위에서 아래 순서로 전체 셀을 실행합니다.
 
 ## 파일 구성
 
 ```text
 WineQualityDetection/
+├── data/
+│   └── winequality-red.csv        # UCI 원본 레드 와인 품질 데이터
 ├── WineQualityDetection.ipynb    # EDA, 데이터 전처리, 모델 학습 및 평가
 ├── README.md                     # 프로젝트 소개 및 분석 결과
 └── requirements.txt              # 사용 라이브러리
