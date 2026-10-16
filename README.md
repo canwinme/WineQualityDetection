@@ -1,4 +1,4 @@
-# Wine Quality Detection 🍷
+# Wine Quality Detection 
 
 와인의 물리화학적 성분을 활용해 **우수 와인 여부를 분류**하고, Logistic Regression과 Decision Tree의 성능을 비교한 머신러닝 실습 프로젝트입니다.
 
