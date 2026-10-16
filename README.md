@@ -23,11 +23,8 @@
 - **사용한 파일:** `data/winequality-red.csv` (레드 와인 1,599개, 화학 성분 11개와 품질 점수 1개)
 - **논문:** Cortez et al. (2009), *Modeling wine preferences by data mining from physicochemical properties*
 
-[UCI Wine Quality Dataset](https://archive.ics.uci.edu/dataset/186/wine+quality)
-
 원본 데이터는 `winequality-red.csv`를 사용합니다. 이 파일은 세미콜론(`;`)으로 구분되어 있으며, 마지막 `quality` 컬럼에 품질 점수가 기록되어 있습니다.
 
-> 원본 레드 와인 데이터 파일은 이 저장소의 [`data/winequality-red.csv`](data/winequality-red.csv)에 포함되어 있습니다. 출처: [UCI Machine Learning Repository – Wine Quality](https://archive.ics.uci.edu/dataset/186/wine+quality).
 
 ## 분석 과정
 
